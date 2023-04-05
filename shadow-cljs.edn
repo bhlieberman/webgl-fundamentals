@@ -1,0 +1,16 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+ 
+ :dev-http {8080 "public"}
+
+ :dependencies
+ []
+
+ :builds
+ {:tutorial {:target :browser
+             :output-dir "public/js"
+             :asset-path "js"
+             :modules {:main {:entries [bhlie.webgl.intro]}}}}}
